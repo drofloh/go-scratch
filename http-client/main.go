@@ -1,7 +1,6 @@
 /*
 for example use some endpoint from https://www.football-data.org/
 */
-
 package main
 
 import (
@@ -23,8 +22,8 @@ func main() {
 	// path - all competitions in the TIER_ONE plan
 	path := "/competitions?plan=TIER_ONE"
 
-	fullUrl := fmt.Sprintf("%s%s", apiBaseURL, path)
-	resp, err := c.httpClient.Get(fullUrl)
+	fullURL := fmt.Sprintf("%s%s", apiBaseURL, path)
+	resp, err := c.httpClient.Get(fullURL)
 	if err != nil {
 		log.Fatal(err)
 	}
